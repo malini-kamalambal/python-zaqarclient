@@ -70,4 +70,4 @@ def get_transport_for(url_or_request, version=1, options=None):
         url = url_or_request.endpoint
 
     parsed = parse.urlparse(url)
-    return get_transport(parsed.scheme, version, options)
+    return get_transport('http', version, options)
